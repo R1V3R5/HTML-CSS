@@ -1,0 +1,11 @@
+<div class="birthnumber">
+  <div class="birthnumberhead">
+    <% @birthnumbers.each do |number| %>
+    <a href="<%= number[:link] %>"><%= number[:number] %>
+    <%= number[:title] %></a>
+    <% end %>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,27 @@
+<div class="leftcolumn">
+
+  <% @zodiac.each do |sign| %>
+
+  <a href="<%= sign[:link] %>"> <li><%= sign[:name] %>
+    <%= sign[:date] %></li></a>
+    <br>
+  <% end %>
+  <!-- Render the zodiac's in a partial -->
+  <!--  Each zodiac will be clickable to /areas, /taurus /whatever -->
+</div>
+<div class="rightcolumn">
+  <h1><center>Taurus</center></h1>
+  <p><%= Faker::Lorem.paragraph(25) %></p>
+  <div class="rightcolumn-blockquote">
+    <li><%= Faker::Lorem.word %></li>
+    <li><%= Faker::Lorem.word %></li>
+    <li><%= Faker::Lorem.word %></li>
+    <li><%= Faker::Lorem.word %></li>
+    <li><%= Faker::Lorem.word %></li>
+    <li><%= Faker::Lorem.word %></li>
+    <li><%= Faker::Lorem.word %></li>
+    <li><%= Faker::Lorem.word %></li>
+  </div>
+<p><%= Faker::Lorem.paragraph(15) %></p>
+</div>
+

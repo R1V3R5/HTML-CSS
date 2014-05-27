@@ -1,0 +1,12 @@
+<div class="birthnumber">
+  <div class="birthnumberhead">
+    <% @birthnumbers.each do |number| %>
+    <a href="<%= number[:link] %>"><%= number[:number] %>
+    <%= number[:title] %></a>
+    <% end %>
+  </div>
+  <div class="birthnumbercontent">
+    <center><h1>CONSERVATIVE</h1></center>
+   <left><%= Faker::Lorem.paragraph(10) %>
+  </div>
+</div>
